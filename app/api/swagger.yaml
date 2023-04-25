@@ -1,8 +1,8 @@
 swagger: '2.0'
 
 info:
-    title: MiroTalk SFU API
-    description: API description for external applications that integrates with MiroTalk SFU.
+    title: RogaCHat API
+    description: API description for external applications that integrates with RogaCHat.
     version: 1.0.0
 
 basePath: /api/v1

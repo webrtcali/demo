@@ -1,5 +1,5 @@
 {
-    "name": "mirotalksfu",
+    "name": "Rogachat",
     "version": "1.0.4",
     "description": "WebRTC SFU browser-based video calls",
     "main": "Server.js",
@@ -13,15 +13,15 @@
         "docker-rmi": "docker images |grep '<none>' |awk '{print $3}' |xargs docker rmi",
         "docker-push": "docker push mirotalk/sfu:latest",
         "docker-pull": "docker pull mirotalk/sfu:latest",
-        "docker-rmc": "docker container rm mirotalksfu --force",
-        "docker-run": "docker run -d -p 40000-40100:40000-40100 -p 3010:3010 -v ./app/src/config.js:/src/app/src/config.js:ro --name mirotalksfu mirotalk/sfu:latest",
-        "docker-run-vm": "docker run -d -p 40000-40100:40000-40100 -p 3010:3010 -v ./app/:/src/app/:ro -v ./public/:/src/public/:ro --name mirotalksfu mirotalk/sfu:latest",
-        "docker-start": "docker start mirotalksfu",
-        "docker-stop": "docker stop mirotalksfu"
+        "docker-rmc": "docker container rm Rogachat --force",
+        "docker-run": "docker run -d -p 40000-40100:40000-40100 -p 3010:3010 -v ./app/src/config.js:/src/app/src/config.js:ro --name Rogachat mirotalk/sfu:latest",
+        "docker-run-vm": "docker run -d -p 40000-40100:40000-40100 -p 3010:3010 -v ./app/:/src/app/:ro -v ./public/:/src/public/:ro --name Rogachat mirotalk/sfu:latest",
+        "docker-start": "docker start Rogachat",
+        "docker-stop": "docker stop Rogachat"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/miroslavpejic85/mirotalksfu"
+        "url": "git+https://github.com/miroslavpejic85/Rogachat"
     },
     "keywords": [
         "webrtc",
@@ -48,6 +48,7 @@
         "qs": "6.11.1",
         "socket.io": "4.6.1",
         "swagger-ui-express": "4.6.2",
+        "sweetalert2": "^11.7.3",
         "uuid": "9.0.0",
         "xss": "^1.0.14",
         "yamljs": "0.3.0"

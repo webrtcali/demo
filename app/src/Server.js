@@ -30,9 +30,9 @@ dependencies: {
 */
 
 /**
- * MiroTalk SFU - Server component
+ * RogaCHat - Server component
  *
- * @link    GitHub: https://github.com/miroslavpejic85/mirotalksfu
+ * @link    GitHub: https://github.com/miroslavpejic85/Rogachat
  * @link    Official Live demo: https://sfu.mirotalk.com
  * @license For open source use: AGPLv3
  * @license For commercial or closed source, contact us at license.mirotalk@gmail.com or purchase directly via CodeCanyon
@@ -128,7 +128,7 @@ const dir = {
 
 // html views
 const views = {
-    about: path.join(__dirname, '../../', 'public/views/about.html'),
+    
     landing: path.join(__dirname, '../../', 'public/views/landing.html'),
     login: path.join(__dirname, '../../', 'public/views/login.html'),
     newRoom: path.join(__dirname, '../../', 'public/views/newroom.html'),
@@ -250,7 +250,7 @@ function startServer() {
     app.get('/join/', (req, res) => {
         if (hostCfg.authenticated && Object.keys(req.query).length > 0) {
             log.debug('Direct Join', req.query);
-            // http://localhost:3010/join?room=test&password=0&name=mirotalksfu&audio=1&video=1&screen=1&notify=1
+            // http://localhost:3010/join?room=test&password=0&name=Rogachat&audio=1&video=1&screen=1&notify=1
             const { room, password, name, audio, video, screen, notify } = req.query;
             if (room && password && name && audio && video && screen && notify) {
                 return res.sendFile(views.room);

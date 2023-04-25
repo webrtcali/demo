@@ -2,7 +2,7 @@
 import requests
 import json
 
-API_KEY = "mirotalksfu_default_secret"
+API_KEY = "Rogachat_default_secret"
 MIROTALK_URL = "https://sfu.mirotalk.com/api/v1/join"
 # MIROTALK_URL = "http://localhost:3010/api/v1/join"
 
@@ -14,7 +14,7 @@ headers = {
 data = {
     "room": "test",
     "password": "false",
-    "name": "mirotalksfu",
+    "name": "Rogachat",
     "audio": "true",
     "video": "true",
     "screen": "true",

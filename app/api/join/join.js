@@ -2,7 +2,7 @@
 
 const fetch = require('node-fetch');
 
-const API_KEY = 'mirotalksfu_default_secret';
+const API_KEY = 'Rogachat_default_secret';
 const MIROTALK_URL = 'https://sfu.mirotalk.com/api/v1/join';
 // const MIROTALK_URL = 'http://localhost:3010/api/v1/join';
 
@@ -16,7 +16,7 @@ function getResponse() {
         body: JSON.stringify({
             room: 'test',
             password: false,
-            name: 'mirotalksfu',
+            name: 'Rogachat',
             audio: true,
             video: true,
             screen: true,

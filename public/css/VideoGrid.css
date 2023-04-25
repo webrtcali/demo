@@ -82,7 +82,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    color: #fff;
+    color: black;
+    background: #ff8008 !important;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -131,8 +132,8 @@
 
 .videoMenuBar input,
 .videoMenuBar button {
-    float: right;
-    color: #fff;
+    float: center;
+    color: #ff8008;
     background: transparent;
     border-radius: 5px;
     display: inline;

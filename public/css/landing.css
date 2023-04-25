@@ -1526,7 +1526,7 @@ label {
 }
 .cta-inner {
     position: relative;
-    background: #15181d;
+    background: radial-gradient(rgb(109 115 209), rgb(0, 0, 0)) !important;
     overflow: hidden;
 }
 .cta-inner::before {

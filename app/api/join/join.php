@@ -1,11 +1,11 @@
 <?php
 
-$API_KEY = "mirotalksfu_default_secret";
-$MIROTALK_URL = "https://sfu.mirotalk.com/api/v1/join";
-// $MIROTALK_URL = "http://localhost:3010/api/v1/join";
+$API_KEY = "Rogachat_default_secret";
+$Rogachat_URL = "https://.Rogachat.com/api/v1/join";
+// $Rogachat_URL = "http://localhost:3010/api/v1/join";
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $MIROTALK_URL);
+curl_setopt($ch, CURLOPT_URL, $Rogachat_URL);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 
@@ -19,7 +19,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $data = array(
     "room"      => "test",
     "password"  => false,
-    "name"      => "mirotalksfu",
+    "name"      => "Rogachat",
     "audio"     => true,
     "video"     => true,
     "screen"    => true,

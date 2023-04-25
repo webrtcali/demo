@@ -1,21 +1,11 @@
 'use strict';
 
-/**
- * MiroTalk SFU - Client component
- *
- * @link    GitHub: https://github.com/miroslavpejic85/mirotalksfu
- * @link    Official Live demo: https://sfu.mirotalk.com
- * @license For open source use: AGPLv3
- * @license For commercial or closed source, contact us at license.mirotalk@gmail.com or purchase directly via CodeCanyon
- * @license CodeCanyon: https://codecanyon.net/item/mirotalk-sfu-webrtc-realtime-video-conferences/40769970
- * @author  Miroslav Pejic - miroslav.pejic.85@gmail.com
- * @version 1.0.4
- *
- */
+
 
 const cfg = {
     useAvatarApi: true,
-    msgAvatar: 'https://eu.ui-avatars.com/api',
+    msgAvatar: 'https://i.ibb.co/GsnW24W/878685-user-512x512-modified.png',
+    // msgAvatar: 'https://eu.ui-avatars.com/api', https://i.ibb.co/jvv7jqP/back.jpg
 };
 
 const html = {
@@ -40,8 +30,8 @@ const html = {
 };
 
 const image = {
-    about: '../images/mirotalksfu-logo.png',
-    avatar: '../images/mirotalksfu-logo.png',
+    about: '../images/logo.png',
+    avatar: '../images/logo.png',
     audio: '../images/audio.gif',
     poster: '../images/loader.gif',
     delete: '../images/delete.png',
@@ -2175,12 +2165,18 @@ class RoomClient {
     changeBtnsBarPosition(position) {
         switch (position) {
             case 'vertical':
-                document.documentElement.style.setProperty('--btns-top', '50%');
-                document.documentElement.style.setProperty('--btns-right', '0%');
-                document.documentElement.style.setProperty('--btns-left', '10px');
-                document.documentElement.style.setProperty('--btns-margin-left', '0px');
-                document.documentElement.style.setProperty('--btns-width', '60px');
-                document.documentElement.style.setProperty('--btns-flex-direction', 'column');
+                // document.documentElement.style.setProperty('--btns-top', '50%');
+                // document.documentElement.style.setProperty('--btns-right', '0%');
+                // document.documentElement.style.setProperty('--btns-left', '10px');
+                // document.documentElement.style.setProperty('--btns-margin-left', '0px');
+                // document.documentElement.style.setProperty('--btns-width', '60px');
+                // document.documentElement.style.setProperty('--btns-flex-direction', 'column');
+                document.documentElement.style.setProperty('--btns-top', '95%');
+                document.documentElement.style.setProperty('--btns-right', '25%');
+                document.documentElement.style.setProperty('--btns-left', '50%');
+                document.documentElement.style.setProperty('--btns-margin-left', '-160px');
+                document.documentElement.style.setProperty('--btns-width', '320px');
+                document.documentElement.style.setProperty('--btns-flex-direction', 'row');
                 break;
             case 'horizontal':
                 document.documentElement.style.setProperty('--btns-top', '95%');
@@ -3071,7 +3067,7 @@ class RoomClient {
         Swal.fire({
             allowOutsideClick: false,
             background: swalBackground,
-            imageAlt: 'mirotalksfu-file-sharing',
+            imageAlt: 'Rogachat-file-sharing',
             imageUrl: image.share,
             position: 'center',
             title: 'Share file',
@@ -3288,7 +3284,7 @@ class RoomClient {
                     title: 'Received file',
                     text: this.incomingFileInfo.fileName + ' size ' + this.bytesToSize(this.incomingFileInfo.fileSize),
                     imageUrl: e.target.result,
-                    imageAlt: 'mirotalksfu-file-img-download',
+                    imageAlt: 'Rogachat-file-img-download',
                     showDenyButton: true,
                     confirmButtonText: `Save`,
                     denyButtonText: `Cancel`,
